@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="France Ola's photography portfolio and personal website showcasing wildlife and visual stories.">
+
+    <title>France Ola photographer</title>
+    
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    
+      (function() {
+        emailjs.init("nNIoHkEWuc_pw1FeM");
+      })();
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> 
+            <img src="Logo-F.O-B.png" alt="Logo" class="header-logo" id="logo"> 
+           </a>
+        </div>
+        <div class="burger"  id="burgerButton" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="My-work.html" data-page="my-work">My work</a></li>
+            <li><a href="Gallery.html" data-page="gallery">Gallery</a></li>
+
+            <li><a href="AboutMe.html" data-page="aboutme">About</a></li>
+            <li><a href="essai.html" data-page="essai">Buy</a></li> <li><a href="https://eu.jotform.com/app/250389526726365/page/27">Donate</a></li>
+
+        </ul>
+    </nav>
+            
+                
+            <div class="header-container">
+                
+                <div class="full-width-photo-container">
+                    <img src="image/Regard d'oiseau.jpeg" alt="bird" class="full-width-photo3" loading="lazy">
+                        
+                       
+                </div>
+                </div>
+<div class="container">
+    <h5 class="about-text">HEY THERE!</h5>
+    <h5 class="autre-sub"><strong style="color: #869557;">I’m France Ola, a photographer with a passion for capturing the little moments that tell big stories.</strong> When I’m not behind the camera, you’ll find me… behind my keyboard!  Why? Well, I love a good challenge! So, I decided to code this entire website on my own! Between writing lines of code and snapping shots, I love pushing my limits and learning new things. This site is both my showcase and my little geeky playground. So, welcome to my visual—and slightly techy—world!"</h5>
+</div> 
+    <div class="full-width-photo2">
+        <img src="image/dragonfly.jpeg"alt="dragonfly" class="full-width-photo2" loading="lazy"> 
+    </div> 
+    <div class="container">
+        <h5 class="about-text">Eternal, Wildlife, Narratives</h5>
+        <h5 class="autre-sub">"Behind every capture, a profound story unfolds, transforming fleeting wildlife moments into enduring, inspirational visual tales."</h5>
+    </div>
+        <div class="full-width-photo2">
+        <img src="image/Morcotte.jpeg"alt="Morcotte" class="full-width-photo2" loading="lazy"> 
+        </div>
+    
+<!-- contact form -->  
+<div class="container-contact">
+<div class="contact-form">
+    <h5 class="about-text ">Contact Me</h5>
+    <form id="contactForm" action="https://formspree.io/f/xanwkngd" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="confirmationMessage" style="display:none; color: #869557;">Thank you! Your message has been sent successfully.</p>
+    </form>
+</div>
+</div>
+    
+<script>
+      
+    document.addEventListener('contextmenu', function(e) {
+if (e.target.tagName === 'IMG') {
+e.preventDefault();
+alert("L'enregistrement des images n'est pas autorisé sur ce site.");
+}
+}, false);
+
+
+    document.addEventListener('keydown', function(e) {
+if (e.ctrlKey || e.altKey || e.metaKey) {
+e.preventDefault();
+return false;
+
+}
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Récupère le nom du fichier de la page actuelle
+    let currentPage = window.location.pathname.split("/").pop().toLowerCase().split(".")[0];
+
+    // Sélectionne tous les liens du menu
+    let navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("data-page") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+
+
+  </script>
+    
+    <script src="login.js"></script>
+</body>
+</html>  
+
+
+      
+                   
+                        
+    
+
+                          

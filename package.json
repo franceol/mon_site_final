@@ -1,0 +1,10 @@
+{
+    "name": "lambda-project",
+    "version": "1.0.0",
+    "description": "AWS Lambda function",
+    "main": "index.js",
+    "dependencies": {
+      "aws-sdk": "^2.1048.0"
+    }
+  }
+  

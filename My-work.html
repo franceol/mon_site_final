@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wildlife photography</title>
+       
+        <script src="https://kit.fontawesome.com/3f09d9b6d4.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="image/favicon-32x32.png">
+        <link href="style.css" rel="stylesheet">
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function() {
+            emailjs.init("nNIoHkEWuc_pw1FeM");
+          })();
+        </script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"> 
+                <img src="Logo-F.O-B.png" alt="Logo" class="header-logo" id="logo"> 
+               </a>
+            </div>
+            <div class="burger"  id="burgerButton" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html" data-page="index">Home</a></li>
+              <li><a href="My-work.html" data-page="my-work">My work</a></li>
+              <li><a href="Gallery.html" data-page="gallery">Gallery</a></li>
+  
+              <li><a href="AboutMe.html" data-page="aboutme">About</a></li>
+              <li><a href="essai.html" data-page="essai">Buy</a></li>
+              <li><a href="https://eu.jotform.com/app/250389526726365/page/27">Donate</a></li>
+            </ul>
+        </nav>
+        <div class="row-top">
+            <div class="column-my-title">
+                <div class="content-my-title">
+            <h5 class="title-LW" id="modalTitle">My work at a glance</h5>
+            <h5 class="text-LW">Discover the enchanting beauty of South Korea</h5>
+            </div>
+        </div>
+      </div>
+      <div class="column-my">
+          <div class="content-my">
+            
+            <img src="image/Temple_Serenity.jpeg" alt="Temple Serenity" style="width: 100%">
+            <h5 class="title2-LW">Temple Serenity</h5>
+            <h5 class="text2-LW">The serene majesty of these historic sanctuaries, where ancient stones whisper tales of time and tradition.</h5>
+            </div>
+        </div>
+        <div class="column-my">
+            <div class="content-my">
+            <img src="image/Floral_Wonders.jpeg" alt="Floral Wonders" style="width: 100%">
+            <h5 class="title2-LW">Floral Wonders</h5>
+            <h5 class="text2-LW">Explore the vibrant beauty of floral landscapes and the delicate details of Korean flowers</h5>
+          </div> 
+          </div>
+      
+      <section>
+        <div class="column-my-title">
+              <div class="content-my-title">
+              <h5 class="title-LW">A brief glance</h5>
+              <h5 class="text-LW">Join me in exploring the world of wildlife through my lens.</h5>
+              </div> 
+            
+      </section>
+
+      <section>
+        <div class="row-my2">
+            <div class="column-my">
+                <div class="content-my">
+              <a href="Gallery.html"> 
+              <img src="image/Rouge Gorge.jpeg" alt="Rouge Gorge" style="width: 100vw">
+              </a>
+                <h5 class="title2-LW">The Magic of Birdlife</h5>
+          </div>
+        </div>
+    
+         
+        <div class="column-my">
+            <div class="content-my">
+                 <a href="Gallery.html">  
+              <img src="image/fly_on_flower.jpeg" alt="fly_on_flower" style="width: 100vw">
+                 </a>
+             <h5 class="title2-LW">Amazing Insects</h5> 
+          </div>
+              </div>
+              <div class="column-my">
+                <div class="content-my">
+                  <a href="Gallery.html">
+                  <img src="image/monkey.jpeg" alt="monkey" style="width: 100vw">
+                  </a>
+                  <h5 class="title2-LW">Animal kingdom's</h5>
+              </div>
+              </div>
+              <div class="column-my">
+              <div class="content-my">
+                  
+                  <a href="Gallery.html">    
+                  <img src="image/flower.jpeg" alt="Flowers" style="width: 100vw">
+                </a>
+                 <div class="protection-layer">
+                  <h5 class="title2-LW">Flowers Beauty</h5> 
+              </div> 
+            </div>   
+          </div>
+      
+      
+          <div class="column-my-title">
+          <div class="content-my">
+               <h5 class="title-LW">Discover Wildlife Through My Lens</h5>
+              
+                  <h5 class="text-LW"> Discover a world of natural wonders on my Instagram! Dive into the elegance and majesty of birds in their habitats, and marvel at the vibrant colors and hidden beauty of Earth's smallest creatures. Be inspired by the diversity and magic of the avian world and the miniature wonders around us. Join me on this inspiring journey and enjoy your visual trip!</h5>
+              </div>        
+            
+        </div>
+                      <a href="https://www.instagram.com/france.ola_photography" class="fa-brands fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+            
+ 
+  <script>
+      
+      document.addEventListener('contextmenu', function(e) {
+if (e.target.tagName === 'IMG') {
+e.preventDefault();
+alert("L'enregistrement des images n'est pas autorisé sur ce site.");
+}
+}, false);
+
+  
+      document.addEventListener('keydown', function(e) {
+if (e.ctrlKey || e.altKey || e.metaKey) {
+e.preventDefault();
+return false;
+
+}
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Récupère le nom du fichier de la page actuelle
+    let currentPage = window.location.pathname.split("/").pop().toLowerCase().split(".")[0];
+
+    // Sélectionne tous les liens du menu
+    let navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("data-page") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+
+    </script>
+  <script src="login.js"></script>
+ 
+  
+</body>
+</html>

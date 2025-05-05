@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../en trop de site/api"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "public"
+	}
+}

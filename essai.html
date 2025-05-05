@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photography to Buy</title>
+    
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png">
+    <link href="essai.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function() {
+            emailjs.init("nNIoHkEWuc_pw1FeM");
+          })();
+       </script>
+    <script async
+                src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"> 
+                <img src="Logo-F.O-B.png" alt="Logo" class="header-logo" id="logo"> 
+               </a>
+            </div>
+            <div class="burger"  id="burgerButton" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-page="index">Home</a></li>
+            <li><a href="My-work.html" data-page="my-work">My work</a></li>
+            <li><a href="Gallery.html" data-page="gallery">Gallery</a></li>
+
+            <li><a href="AboutMe.html" data-page="aboutme">About</a></li>
+            <li><a href="essai.html" data-page="essai">Buy</a></li>
+            <li><a href="https://eu.jotform.com/app/250389526726365/page/27">Donate</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<!-- Filter Buttons -->
+<section>
+    <div id="myBtnContainer" class="main">
+        <button class="btn" data-filter="All">Show all</button>
+        <button class="btn" data-filter="Birds">Birds</button>
+        <button class="btn" data-filter="Animals">Animals</button>
+        <button class="btn" data-filter="Flowers">Flowers</button>
+        <button class="btn" data-filter="Insects">Insects</button>
+    </div>
+</section>
+
+    <!-- Portfolio Gallery Grid -->
+    <div id="Gallery" class="gallery">
+            <div class="gallery-item column Insects">
+            <div class="img-container">
+                <img src="images/Butterfly.jpeg" alt="Butterfly">
+            </div>
+            
+                <h3>Butterfly's Grace</h3>
+                <p>CHF 15.00</p>
+                
+                <div id="stripeButtonContainer" class="stripe-button-container">
+
+                    
+                    <stripe-buy-button
+                    buy-button-id="buy_btn_1QBThJI8PCgu8n52l0quSEEh"
+                    publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+                  >
+                  </stripe-buy-button>
+            </div>
+        </div>
+    
+
+    
+        
+            <div class="gallery-item column Animals">
+            <div class="img-container">
+                <img src="images/Emerald Coil.jpeg" alt="Emerald Coil">
+                    
+            </div>
+            
+                <h3>Emerald Coil</h3>
+                <p>CHF 15.00</p>
+                <div id="stripeButtonContainer" class="stripe-button-container">
+
+                    <stripe-buy-button
+  buy-button-id="buy_btn_1QBTwjI8PCgu8n52174AhJ6n"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+>
+</stripe-buy-button>
+                                </div>
+                            </div>
+                        
+        
+        
+            <div class="gallery-item column Flowers">
+            <div class="img-container">
+                <img src="images/Golden Daisies.jpeg" alt="Golden Daisies">
+            </div>
+            
+                    <h3>Golden Daisies</h3>
+                    <p>CHF 15.00</p>
+                    <div id="stripeButtonContainer" class="stripe-button-container">
+
+                        <stripe-buy-button
+  buy-button-id="buy_btn_1QBTI0I8PCgu8n52r5WbFjJV"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+>
+</stripe-buy-button>
+                   </div>
+                </div>
+
+       
+      
+        <div class="gallery-item column Animals">
+            <div class="img-container">
+                <img src="images/Herens Cow .jpeg" alt="Herens Cow">
+            </div>
+           
+                <h3>Herens Cow</h3>
+                <p>CHF 15.00</p>
+                <div id="stripeButtonContainer" class="stripe-button-container">
+                    <stripe-buy-button
+  buy-button-id="buy_btn_1QAopbI8PCgu8n526i05O6d9"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+>
+</stripe-buy-button>
+              
+                </div>
+        </div>
+        
+
+
+        
+            <div class="gallery-item column Birds">
+            <div class="img-container">
+                <img src="images/Crested tit on branch.jpeg" alt="Crested tit on branch">
+            </div>
+            
+                    <h3>Crested tit on branch</h3>
+                    <p>CHF 15.00</p>
+                    <div id="stripeButtonContainer" class="stripe-button-container">
+                        <stripe-buy-button
+  buy-button-id="buy_btn_1QBU9xI8PCgu8n52pVaZRoXq"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+>
+</stripe-buy-button>
+                   </div>
+                </div>
+        
+
+
+        
+        
+            <div class="gallery-item column Animals">
+            <div class="img-container">
+                <img src="images/Squirrel in the Sunlight.jpeg" alt="Squirrel in the Sunlight">
+            </div>
+                    <h3>Squirrel in the Sunlight</h3>
+                    <p>CHF 15.00</p>
+                    <div id="stripeButtonContainer" class="stripe-button-container">
+                        <stripe-buy-button
+  buy-button-id="buy_btn_1QBUHGI8PCgu8n52e3gPsRbO"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+>
+</stripe-buy-button>
+            </div>
+                </div>
+        
+
+
+        
+        
+            
+            <div class="gallery-item column Birds">
+            <div class="img-container">
+                <img src="images/Blue tit on a branch.jpeg" alt="Blue tit on a branch">
+            </div>
+            
+                    <h3>Blue tit on branch</h3>
+                    <p>CHF 1.00</p>
+                    <div id="stripeButtonContainer" class="stripe-button-container">
+                        <stripe-buy-button
+  buy-button-id="buy_btn_1QBUOyI8PCgu8n52VFNkHpoy"
+  publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX">
+</stripe-buy-button>
+                   </div>
+            </div>
+        
+       
+
+        
+       
+            <div class="gallery-item column Insects">
+            <div class="img-container">
+                <img src="images/Ladybug's Journey.jpeg" alt="Ladybug">
+            </div>
+            
+                    <h3>Ladybug's Journey</h3>
+                    <p>CHF 15.00</p>
+                    <div id="stripeButtonContainer" class="stripe-button-container">
+                        <stripe-buy-button
+                        buy-button-id="buy_btn_1QBVJWI8PCgu8n52CUWFSOM2"
+                        publishable-key="pk_live_51QAoKLI8PCgu8n523HFn0VT5Y8BK42hMmqwLsbH9IdynG1F50hlJL0PVOQQ83R63WWkvqz1dBq38klZTDIVlHzQY00XTSk3yeX"
+                      >
+                      </stripe-buy-button>
+                   </div>
+                </div>
+        </div>
+    
+
+<script>
+ 
+
+  
+    document.addEventListener('contextmenu', function(e) {
+if (e.target.tagName === 'IMG') {
+e.preventDefault();
+alert("L'enregistrement des images n'est pas autorisé sur ce site.");
+}
+}, false);
+
+
+    document.addEventListener('keydown', function(e) {
+if (e.ctrlKey || e.altKey || e.metaKey) {
+e.preventDefault();
+return false;
+
+}
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Récupère le nom du fichier de la page actuelle
+    let currentPage = window.location.pathname.split("/").pop().toLowerCase().split(".")[0];
+
+    // Sélectionne tous les liens du menu
+    let navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("data-page") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    function filterSelection(category) {
+        let items = document.querySelectorAll(".gallery-item");
+        
+        if (category === "All") {
+            items.forEach(item => item.style.display = "block");
+        } else {
+            items.forEach(item => {
+                if (item.classList.contains(category)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    }
+
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Utilise l'attribut data-filter pour obtenir la catégorie
+            let category = this.getAttribute("data-filter");
+            filterSelection(category);
+        });
+    });
+
+    filterSelection("All");
+});
+// Handle purchase
+document.getElementById("confirmPurchaseBtn").click = function() {
+    // Redirect to Stripe Checkout
+    stripe.redirectToCheckout({
+      lineItems: [{
+        price: 'PRICE_ID_FROM_STRIPE_DASHBOARD', // Replace with your price ID
+        quantity: 1,
+      }],
+      mode: 'payment',
+      successUrl: 'https://franceola.com/success',
+      cancelUrl: 'https://franceola.com/cancel',
+    }).then(function (result) {
+      if (result.error) {
+        alert(result.error.message);
+      }
+    })
+  };
+ 
+</script>
+<!-- Stripe.js -->
+<script src="https://js.stripe.com/v3/buy-button.js"></script>
+
+   <script src="login.js"></script>
+
+</body>
+</html>
